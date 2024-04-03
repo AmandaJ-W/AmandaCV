@@ -1,7 +1,8 @@
-* {
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    zoom: 1.05;
   }
   
   html {
@@ -20,6 +21,7 @@
     padding-bottom: 50px;
     
   }
+
   
   .container {
     max-width: 700px;
@@ -29,26 +31,36 @@
     border-radius: 3px;
     padding: 40px;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
   }
   
   .header {
     margin-bottom: 30px;
   }
   
-
+  
   .header {
     position: relative; 
+    
   }
+
   
   .profile-pic {
     position: absolute; 
-    top: 5px; 
-    right: 10px; 
-    width: 75px; 
+    top: -20px; 
+    left: 530px;  
+    width: 80px; 
     height: auto;
     border-radius: 50%; 
     border: 2px solid #fff; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+  }
+
+  .profile-pic:hover {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: rotate(180deg);
   }
 
   .full-name {
@@ -121,7 +133,10 @@
   .section__list-item:last-of-type {
     margin-bottom: 10px;
   }
-  
+  .experience-item {
+    margin-bottom: 10px;
+  }
+
   .left,
   .right {
     vertical-align: top;
@@ -139,13 +154,18 @@
   
   .dates {
     font-weight: bold;
+    font-size: 12px;
   }
-
+  .place {
+    font-size: 12px;
+  }
   .name {
     font-weight: bold;
+    font-size: 12px;
   }
   .desc {
     font-style: italic;
+    font-size: 10px;
   }
   .desc ul {
     list-style-type:circle;
@@ -187,7 +207,8 @@
   
   a:hover {
     text-decoration: underline;
-    color: #000;
+    font-weight: bold;
+    color: rgb(115, 0, 255); 
   }
   
   .skills__item {
@@ -220,4 +241,45 @@
     font-weight: bold;
   }
  
-  
+
+
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 12px;
+    }
+    .header {
+      text-align: center;
+      display: block;
+    }
+    .separator {
+      display: none;
+    }
+    
+    .container {
+        width: 100%;
+    }
+    .experience-item {
+      display: block; 
+      margin-bottom: 20px;
+  }
+
+  .left, .right {
+      width: 100%;
+      text-align: left; 
+  }
+
+
+  .right {
+      margin-top: 10px;
+      
+  }
+
+  .name, .dates, .place {
+      font-size: 14px; 
+  }
+
+  .desc {
+      font-size: 12px; 
+  }
+} 
+
