@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "Unit Testing (JUnit)",
     "E/R Diagrams",
     "Integration Testing",
-    "Wordpress",
+    "WordPress",
   ];
 
   function displaySkills(skills) {
