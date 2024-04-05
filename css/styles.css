@@ -49,7 +49,7 @@
   .profile-pic {
     position: absolute; 
     top: -20px; 
-    left: 530px;  
+    left: 450px;  
     width: 80px; 
     height: auto;
     border-radius: 50%; 
@@ -87,11 +87,29 @@
     font-weight: 300;
   }
   
+  #download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8E70DC; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    margin-top: 10px;
+  }
+
+  #download:hover {
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+  }
+
   .separator {
     height: 10px;
     display: inline-block;
     border-left: 2px solid #999;
     margin: 0px 10px;
+  }
+
+  #last {
+    border-left: white;
   }
   
   .position {
@@ -118,7 +136,7 @@
     margin-bottom: 0px;
   }
   
-  .section__title {
+  .section-title {
     letter-spacing: 2px;
     color: #8E70DC;
     font-weight: bold;
@@ -126,15 +144,17 @@
     text-transform: uppercase;
   }
   
-  .section__list-item {
+  .section-list-item {
     margin-bottom: 10px;
+    display: flex;
   }
   
-  .section__list-item:last-of-type {
+  .section-list-item:last-of-type {
     margin-bottom: 10px;
   }
   .experience-item {
     margin-bottom: 10px;
+    display: flex;
   }
 
   .left,
@@ -176,7 +196,7 @@
     line-height: 1.2;
   }
 
-  .see-more {
+.see-more {
   font-size: 15px;
   font-weight: bold;
   color: #8E70DC;
@@ -211,16 +231,16 @@
     color: rgb(115, 0, 255); 
   }
   
-  .skills__item {
+  .skills-item {
     margin-bottom: 10px;
     line-height: 1.2;
   }
   
-  .skills__item .right input {
+  .skills-item .right input {
     display: none;
   }
   
-  .skills__item .right label {
+  .skills-item .right label {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -240,46 +260,43 @@
   .language {
     font-weight: bold;
   }
+
+  #icons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .section-list > * {
+    margin-bottom: 10px;
+  }
  
-
-
-  @media screen and (max-width: 768px) {
-    body {
-      font-size: 12px;
+  @media only screen and (max-width: 600px) {
+  
+    .profile-pic {
+      display: none;
     }
-    .header {
+    .skills {
       text-align: center;
-      display: block;
+    }
+    .full-name {
+      text-align: center;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+    .email, .phone {
+      margin-bottom: 20px;
     }
     .separator {
       display: none;
     }
-    
-    .container {
-        width: 100%;
+    #download {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #8E70DC; 
+      color: #fff; 
+      text-decoration: none; 
+      border-radius: 5px; 
     }
-    .experience-item {
-      display: block; 
-      margin-bottom: 20px;
+
   }
-
-  .left, .right {
-      width: 100%;
-      text-align: left; 
-  }
-
-
-  .right {
-      margin-top: 10px;
-      
-  }
-
-  .name, .dates, .place {
-      font-size: 14px; 
-  }
-
-  .desc {
-      font-size: 12px; 
-  }
-} 
-
+  

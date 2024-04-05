@@ -6,7 +6,7 @@ let skills = ['Java', 'JavaScript', 'HTML', 'CSS',
 'E/R Diagrams', 'Integration Testing', 'Wordpress'];
 
 function displaySkills(skills) {
-    const skillsContainer = document.querySelector('.skills__item');
+    const skillsContainer = document.querySelector('.skills-item');
 
     const skillsText = skills.join(', ');
     // const skillsText = skills.map(skill => `• ${skill}`).join('\n');
