@@ -333,6 +333,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    zoom: 0.81;
   }
   body {
     font-size: 90%;
@@ -342,6 +343,9 @@ a:hover {
   }
   .position {
     font-size: 15px;
+  }
+  .contact-info {
+    text-align: center;
   }
   .skills {
     text-align: center;
@@ -377,3 +381,66 @@ a:hover {
     font-size: 27px;
   }
 }
+
+/* iPhone 13 */
+@media only screen and (max-width: 400px) {
+  .container {
+    max-width: 600px;
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 1px 1px 2px #dad7d7;
+    border-radius: 3px;
+    padding: 40px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    zoom: 0.75;
+  }
+  body {
+    font-size: 90%;
+  }
+  .profile-pic {
+    display: none;
+  }
+  .position {
+    font-size: 15px;
+  }
+  .contact-info {
+    font-size: 12px;
+  }
+  .skills {
+    text-align: center;
+  }
+  .skills-item,
+  .about,
+  .text,
+  .section-list {
+    font-size: 13px;
+  }
+  .full-name {
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 5px;
+    font-size: 30px;
+  }
+  .email,
+  .phone {
+    margin-bottom: 20px;
+  }
+  .separator {
+    display: none;
+  }
+  #download {
+    display: block;
+    padding: 10px 20px;
+    background-color: #8e70dc;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+  }
+  .link-item {
+    font-size: 27px;
+  }
+}
+
