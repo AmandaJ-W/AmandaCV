@@ -21,6 +21,13 @@ body {
   padding-bottom: 50px;
 }
 
+/* Language toggle */
+
+
+
+
+
+/* Rest of page */
 .container {
   max-width: 700px;
   background: #fff;
@@ -314,7 +321,7 @@ a:hover {
   text-transform: capitalize;
 }
 /* Small screens */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .container {
     max-width: 600px;
     background: #fff;
