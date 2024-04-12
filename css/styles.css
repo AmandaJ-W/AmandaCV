@@ -197,12 +197,12 @@ body {
   display: block;
   color: black;
   padding: 6px;
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .duties ul {
   font-style: italic;
-  font-size: 10px;
+  font-size: 11px;
 }
 .duties ul li {
   margin-left: 15px;
@@ -213,7 +213,7 @@ body {
 /* Education section */
 .desc {
   font-style: italic;
-  font-size: 10px;
+  font-size: 11px;
 }
 .desc ul {
   list-style-type: circle;
@@ -253,7 +253,7 @@ body {
   color: white;
   padding: 10px;
   border: 1px solid black;
-  font-size: 9px;
+  font-size: 11px;
 }
 
 a {
