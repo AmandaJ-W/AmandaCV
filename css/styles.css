@@ -363,7 +363,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* zoom: 0.81; */
+    zoom: 0.84;
   }
   body {
     font-size: 90%;
