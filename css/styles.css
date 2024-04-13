@@ -57,7 +57,7 @@ body {
   border-radius: 50%;
   border: 2px solid #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  animation: rainbowBorder 2s linear infinite; 
+  animation: rainbowBorder 8s linear infinite; 
 }
 
 .profile-pic:hover {
@@ -70,25 +70,25 @@ body {
 
 @keyframes rainbowBorder {
   0% {
-      border-color: #f200ff; 
+      border-color: #e6b3ff 
   }
   16.67% {
-      border-color: #7300ff; 
+      border-color: #cc99ff; 
   }
   33.33% {
-      border-color: #ffff00; 
+      border-color: #b3b3ff;; 
   }
   50% {
-      border-color: #00ff00; 
+      border-color: #99ccff; 
   }
   66.67% {
-      border-color: #0000ff; 
+      border-color: #99e6e6 
   }
   83.33% {
-      border-color: #4b0082; 
+      border-color: #ffb3b3; 
   }
   100% {
-      border-color: #9400d3; 
+      border-color: #e6b3ff; 
   }
 }
 
