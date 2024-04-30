@@ -1,4 +1,36 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+
+  function handleLanguageSelection(event) {
+    const selectedLanguage = event.target.value;
+    let fileUrl = "";
+    if (selectedLanguage === "English") {
+      fileUrl = "./docs/Amanda Jean Walker - CV English.pdf";
+    
+    } else if (selectedLanguage === "Spanish") {
+      fileUrl = "./docs/Amanda Jean Walker - CV Spanish.pdf";
+  
+    }
+    if (fileUrl) {
+      const a = document.createElement("a");
+      a.href = fileUrl;
+      a.download = "Amanda Jean Walker - CV " + selectedLanguage; 
+      a.click();
+    }
+  }
+
+  
+  const languageSelector = document.getElementById("language-select");
+  languageSelector.addEventListener("change", handleLanguageSelection);
+
+  const downloadButton = document.getElementById("download");
+  downloadButton.addEventListener("click", function () {
+    const dropdown = document.getElementById("language-dropdown");
+    dropdown.style.display = "block";
+  });
+
+
+
   let skills = [
     "Java",
     "JavaScript",
