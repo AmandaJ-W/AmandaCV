@@ -122,15 +122,18 @@ body {
   padding: 10px 20px;
   background-color: #8e70dc;
   color: #fff;
+  border: 0px;
   text-decoration: none;
   border-radius: 5px;
   margin-top: 10px;
+
 }
 
 #download:hover {
   box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
   transform: rotate(1deg);
+  cursor: pointer;
 }
 
 .separator {

@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+// Language selection for downloading PDF: 
 
   function handleLanguageSelection(event) {
     const selectedLanguage = event.target.value;
@@ -40,8 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "Vue.js",
     "Spring Boot",
     "PostgreSQL",
-    "Web API",
-    "REST",
+    "RESTful APIs",
     "IntelliJ",
     "VS Code",
     "Git",
@@ -52,6 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
     "WordPress", 
     "Agile Methodolgies"
   ];
+
+  // Display technical skills: 
 
   function displaySkills(skills) {
     const skillsContainer = document.querySelector(".skills-item");
@@ -66,6 +68,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   displaySkills(skills);
+
+  // See more buttons in experience: 
 
   const seeMoreButtons = document.querySelectorAll(".see-more");
 
@@ -87,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Translation work (not currently functional):
   const translations = {
     'Junior Software Developer': 'Desarrolladora de Software Junior',
     'Skills': 'Habilidades',
