@@ -350,7 +350,54 @@ a:hover {
   font-style: italic;
   text-transform: capitalize;
 }
+form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
 
+textarea {
+  height: 130px; 
+}
+
+button[type="submit"] {
+  background-color: #8e70dc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  transform: rotate(1deg);
+  cursor: pointer;
+}
+
+#contact-items {
+  display: flex; 
+  flex-direction: column; 
+  gap: 15px; 
+}
 
 
 /* Small screens */
