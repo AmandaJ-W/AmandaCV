@@ -37,21 +37,21 @@ document.addEventListener("DOMContentLoaded", function () {
     "JavaScript",
     "HTML",
     "CSS",
-    "SQL",
     "Vue.js",
+    "WordPress",
+    "Responsive Design",
     "Spring Boot",
+    "SQL",
     "PostgreSQL",
-    "RESTful APIs",
     "IntelliJ",
     "VS Code",
     "Git",
-    "Responsive Design",
+    "RESTful APIs",
+    "Agile Methodologies",
     "Unit Testing (JUnit)",
-    "E/R Diagrams",
     "Integration Testing",
-    "WordPress", 
-    "Agile Methodolgies"
-  ];
+    "E/R Diagrams"
+];
 
   // Display technical skills: 
 
