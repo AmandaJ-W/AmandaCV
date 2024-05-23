@@ -413,7 +413,7 @@ button[type="submit"]:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    zoom: 0.84;
+    /* zoom: 0.84; */
   }
   body {
     font-size: 90%;
@@ -424,22 +424,13 @@ button[type="submit"]:hover {
   .profile-pic {
     display: none;
   }
-  /* .position {
-    font-size: 15px;
-  } */
   .contact-info {
     text-align: center;
+    margin: 10px auto;
   }
   .skills {
     text-align: center;
   }
-  /* .skills-item,
-  .about,
-  .text,
-  .section-list,
-  .contact-info {
-    font-size: 13px;
-  } */
   .full-name {
     text-align: center;
     line-height: 30px;
@@ -456,6 +447,7 @@ button[type="submit"]:hover {
     color: #fff;
     text-decoration: none;
     text-align: center;
+    margin: 10px auto;
   }
 
 } 
