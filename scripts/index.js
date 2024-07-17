@@ -50,25 +50,46 @@ document.addEventListener("DOMContentLoaded", function () {
     "Agile Methodologies",
     "Unit Testing (JUnit)",
     "Integration Testing",
-    "E/R Diagrams"
+    "E/R Diagrams", 
+    "Project Management", 
+    "Website Management"
 ];
+
+let educationalSkills = [
+  "Teaching (PreK-12th)", 
+  "Lesson Planning", 
+  "Curriculum Design", 
+  "Curriculum Innovation", 
+  "Bilingual Curricula", 
+  "Language Assessments"
+]
 
   // Display technical skills: 
 
-  function displaySkills(skills) {
+  function displaySkills(skills, educationalSkills) {
     const skillsContainer = document.querySelector(".skills-item");
 
-    const skillsText = skills.join(", ");
-    // const skillsText = skills.map(skill => `• ${skill}`).join('\n');
+    // Create paragraph for technical skills
+    const techSkillsParagraph = document.createElement("p");
+    // techSkillsParagraph.textContent = "Technical skills: " + skills.join(", ");
+    techSkillsParagraph.innerHTML = "<strong>Technical skills:</strong> " + skills.join(", ");
+    skillsContainer.appendChild(techSkillsParagraph);
 
-    const skillParagraph = document.createElement("p");
-    skillParagraph.textContent = skillsText;
+    techSkillsParagraph.style.marginBottom = "10px";
 
-    skillsContainer.appendChild(skillParagraph);
+    // Create paragraph for educational skills
+    const eduSkillsParagraph = document.createElement("p");
+    // eduSkillsParagraph.textContent = "Educational skills: " + educationalSkills.join(", ");
+    eduSkillsParagraph.innerHTML = "<strong>Educational skills:</strong> " + educationalSkills.join(", ");
+    skillsContainer.appendChild(eduSkillsParagraph);
+
+    eduSkillsParagraph.style.marginTop = "10px";
   }
 
-  displaySkills(skills);
+  displaySkills(skills, educationalSkills);
 
+
+  
   // See more buttons in experience: 
 
   const seeMoreButtons = document.querySelectorAll(".see-more");
