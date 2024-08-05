@@ -56,12 +56,13 @@ document.addEventListener("DOMContentLoaded", function () {
 ];
 
 let educationalSkills = [
-  "Teaching (PreK-12th)", 
+  "Classroom Teaching (PreK-12th)", 
   "Lesson Planning", 
   "Curriculum Design", 
   "Curriculum Innovation", 
   "Bilingual Curricula", 
-  "Language Assessments"
+  "Language Assessments", 
+  "Microsoft Office Suite"
 ]
 
   // Display technical skills: 
