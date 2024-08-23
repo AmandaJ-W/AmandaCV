@@ -182,6 +182,12 @@ body {
 .section-list-item {
   margin-bottom: 10px;
   display: flex;
+  background-color: rgba(0, 0, 0, 0.016);
+  margin: 5px;
+  padding: 10px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 .section-list-item:last-of-type {
@@ -190,6 +196,12 @@ body {
 .experience-item {
   margin-bottom: 10px;
   display: flex;
+  background-color: rgba(0, 0, 0, 0.016);
+  margin: 5px;
+  padding: 10px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 .left,
