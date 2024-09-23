@@ -13,7 +13,7 @@ body {
   min-height: 100%;
   background: radial-gradient(circle, #ffd8f8, #8e70dc);
   background-attachment: fixed;
-  font-family: "Roboto", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   color: #222;
   font-size: 14px;
@@ -325,6 +325,7 @@ a:hover {
 }
 /* Skill section */
 .skills-item {
+  font-size: 13px;
   margin-bottom: 10px;
   line-height: 1.2;
 }
