@@ -262,7 +262,7 @@ body {
 .duties ul li {
   margin-left: 15px;
   line-height: 1.2;
-  font-size: 8px;
+  font-size: 9.5px;
   list-style-type: circle;
 }
 /* Education section */
@@ -375,6 +375,8 @@ a:hover {
   font-size: 10px;
 }
   */
+
+
 #icons {
   display: flex;
   justify-content: space-around;
