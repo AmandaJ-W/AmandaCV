@@ -13,7 +13,7 @@ body {
   min-height: 100%;
   background: radial-gradient(circle, #ffd8f8, #8e70dc);
   background-attachment: fixed;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   color: #222;
   font-size: 14px;
@@ -343,12 +343,21 @@ a:hover {
   margin-right: 3px;
 }
 .project-name {
-  font-size: 10px;
+ 
   font-weight: bold;
 }
-.text {
-  font-size: 10px;
+
+.gif-preview {
+  width: 200px; 
+  height: auto; 
+  border: 2px solid #ccc; 
+  border-radius: 8px; 
 }
+/*
+.text {
+  
+}
+*/
 .link-item {
   text-align: center;
   font-size: 40px;
@@ -358,12 +367,14 @@ a:hover {
   justify-content: space-around;
 }
 .language {
-  font-size: 12px;
+  
   font-weight: bold;
 }
+/*
 .level {
   font-size: 10px;
 }
+  */
 #icons {
   display: flex;
   justify-content: space-around;
