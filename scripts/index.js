@@ -30,7 +30,21 @@ document.addEventListener("DOMContentLoaded", function () {
     dropdown.style.display = "block";
   });
 
+  /* Animation effect on job position */
 
+  // document.addEventListener('DOMContentLoaded', () => {
+  //   const positionElement = document.querySelector('.position');
+  
+  //   // Start typing animation by adding the 'typing' class
+  //   positionElement.classList.add('typing'); 
+  
+  //   // Set a timeout to remove the cursor after typing effect is done
+  //   setTimeout(() => {
+  //     positionElement.classList.add('complete'); // Add class to hide cursor
+  //   }, 4000); // Match this timeout to the duration of the typing effect
+  // });
+  
+  
 
   let skills = [
     "Java",
@@ -76,7 +90,7 @@ let educationalSkills = [
     techSkillsParagraph.innerHTML = "<strong>Technical skills:</strong> " + skills.join(", ");
     skillsContainer.appendChild(techSkillsParagraph);
 
-    techSkillsParagraph.style.marginBottom = "10px";
+    techSkillsParagraph.style.marginBottom = "10px"; 
 
     // Create paragraph for educational skills
     const eduSkillsParagraph = document.createElement("p");
@@ -208,5 +222,5 @@ let educationalSkills = [
   };
 
   
-
 });
+
