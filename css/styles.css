@@ -473,7 +473,7 @@ button[type="submit"]:hover {
 
 
 /* Small screens */
-@media only screen and (width: 100vw) {
+@media only screen and (max-width: 768px) {
   .container {
     max-width: 300px;
     background: #fff;
