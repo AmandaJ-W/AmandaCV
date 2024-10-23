@@ -26,8 +26,6 @@ body {
 
 
 
-
-
 /* Rest of page */
 .container {
   max-width: 700px;
@@ -480,14 +478,17 @@ button[type="submit"]:hover {
     margin: 0 auto;
     box-shadow: 1px 1px 2px #dad7d7;
     border-radius: 3px;
-    padding: 40px;
-    margin-top: 50px;
+    /* padding: 40px; */
+    /* margin-top: 50px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 90%;
   }
-
+.me {
+  margin-top: 10px;
+  text-align: center;
+}
   body {
     font-size: 90%;
   }
