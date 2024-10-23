@@ -11,7 +11,7 @@ html {
 
 body {
   min-height: 100%;
-  background: radial-gradient(circle, #ffd8f8, #8e70dc);
+  /* background: radial-gradient(circle, #ffd8f8, #8e70dc); */
   background-attachment: fixed;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
@@ -472,7 +472,7 @@ button[type="submit"]:hover {
 
 
 /* Small screens */
-@media only screen and (max-width: 760px) {
+@media only screen and (width: 100vw) {
   .container {
     max-width: 300px;
     background: #fff;
@@ -510,7 +510,6 @@ button[type="submit"]:hover {
   .phone {
     display: none;
   }
-  
   #download {
     display: block;
     background-color: #8e70dc;
