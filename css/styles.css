@@ -313,10 +313,10 @@ p {
 
 .see-description.show {
   display: block;
-  background-color: #8f70dc;
-  color: white;
+  background-color: #e3e3e3;
+  color: rgb(0, 0, 0);
   padding: 10px;
-  border: 1px solid black;
+  
   font-size: 11px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
