@@ -12,7 +12,6 @@ html {
 body {
   min-height: 100%;
   background: radial-gradient(circle, #ffd8f8, #8e70dc);
-  /* background-color: blue; */
   background-attachment: fixed;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
@@ -65,7 +64,7 @@ body {
   transform: rotate(1deg);
 }
 
-/* Colored border */
+/* Colored border photo*/
 
 @keyframes rainbowBorder {
   0% {
@@ -150,9 +149,11 @@ p {
   font-size: 12px;
 }
 
-.updates ul {
+.updates > ul {
   font-size: 12px;
-  margin: 15px;
+  list-style-type: circle; 
+  padding-left: 20px; 
+  margin: 10px 0; 
 }
 
 .position {
@@ -161,31 +162,8 @@ p {
   font-weight: bold;
   display: inline-block;
   margin-right: 10px;
-  /* overflow: hidden; 
-  white-space: nowrap; 
-  border-right: 2px solid #000; 
-  animation: typing 4s steps(30, end), blink 0.75s step-end infinite; */
+
 }
-
-/* .position.complete {
-  border-right: none; 
-  animation: none; 
-} */ 
-
-/* @keyframes typing {
-  from {
-    width: 0; 
-  }
-  to {
-    width: 57%; 
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent; 
-  }
-} */
 
 .me {
   line-height: 1.2;
@@ -219,7 +197,7 @@ p {
   padding: 10px;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid gray;
 }
 
 .section-list-item:last-of-type {
@@ -233,7 +211,7 @@ p {
   padding: 10px;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid gray;
 }
 
 #o-logo {
@@ -246,8 +224,7 @@ p {
     filter: brightness(120%);
 }
 
-
-
+/* Experience section  */
 .left,
 .right {
   vertical-align: top;
@@ -274,7 +251,8 @@ p {
   font-weight: bold;
   font-size: 11px;
 }
-/* Experience section  */
+
+
 .duties {
   display: none;
 }
@@ -354,6 +332,7 @@ a:hover {
   font-weight: bold;
   color: rgb(115, 0, 255);
 }
+
 /* Skill section */
 .skills-item {
   font-size: 13px;
@@ -383,11 +362,7 @@ a:hover {
   border: 2px solid #ccc; 
   border-radius: 8px; 
 }
-/*
-.text {
-  
-}
-*/
+
 .link-item {
   text-align: center;
   font-size: 40px;
@@ -400,11 +375,6 @@ a:hover {
   
   font-weight: bold;
 }
-/*
-.level {
-  font-size: 10px;
-}
-  */
 
 
 #icons {
@@ -471,28 +441,22 @@ button[type="submit"]:hover {
 
 
 /* Small screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .container {
     max-width: 300px;
     background: #fff;
     margin: 0 auto;
     box-shadow: 1px 1px 2px #dad7d7;
     border-radius: 3px;
-    /* padding: 40px; */
-    /* margin-top: 50px; */
+    padding: 40px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 90%;
   }
-.me {
-  margin-top: 10px;
-  text-align: center;
-}
   body {
     font-size: 90%;
   }
-
   .image {
     text-align: center;
   }
@@ -515,6 +479,7 @@ button[type="submit"]:hover {
   .phone {
     display: none;
   }
+  
   #download {
     display: block;
     background-color: #8e70dc;
@@ -526,4 +491,58 @@ button[type="submit"]:hover {
 
 } 
 
+/* iPhone 13 */
+/* @media only screen and (max-width: 600px) {
+  .container {
+    max-width: 600px;
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 1px 1px 2px #dad7d7;
+    border-radius: 3px;
+    padding: 40px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    zoom: 0.75;
+  }
+  body {
+    font-size: 90%;
+  }
+  .profile-pic {
+    display: none;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+  .skills {
+    text-align: center;
+  }
+  
+  .full-name {
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 5px;
+    font-size: 30px;
+  }
+  .email,
+  .phone {
+    display: none;
+    text-align: center;
+  }
+  
+  #download {
+    display: block;
+    background-color: #8e70dc;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+}
+
+
+
+style ONLY ul inside of a p element
 
