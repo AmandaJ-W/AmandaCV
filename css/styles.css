@@ -12,6 +12,7 @@ html {
 body {
   min-height: 100%;
   /* background: radial-gradient(circle, #ffd8f8, #8e70dc); */
+  background-color: blue;
   background-attachment: fixed;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
