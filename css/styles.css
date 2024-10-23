@@ -147,6 +147,15 @@ body {
   border-left: white;
 }
 
+p {
+  font-size: 12px;
+}
+
+.updates ul {
+  font-size: 12px;
+  margin: 15px;
+}
+
 .position {
   font-family: 'Chivo';
   font-size: 20px;
@@ -366,7 +375,6 @@ a:hover {
   margin-right: 3px;
 }
 .project-name {
- 
   font-weight: bold;
 }
 
