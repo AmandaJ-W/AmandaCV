@@ -576,6 +576,11 @@ button[type="submit"]:hover {
     text-align: center;
     margin: 10px auto;
   }
+  .popup-content {
+    width: 90%;
+    max-width: 350px;
+    max-height: 250px; 
+  }
 
 } 
 
