@@ -134,6 +134,81 @@ body {
   cursor: pointer;
 }
 
+/* Pop up window */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#storyBtn {
+  /*width: 100%;
+  background-color: #8e70dc;
+  color: #fff;
+  border: none;
+  padding: 4px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+*/
+display: block;
+width: 100%;
+padding: 5px 0;
+border: 1px solid black; 
+background-color: transparent;
+color: black;
+text-align: center;
+font-size: 14px;
+font-weight: 500;
+text-transform: uppercase;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+#storyBtn:hover {
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  transform: rotate(1deg);
+  cursor: pointer;
+  border-color: #8e70dc;
+}
+
+/* Pop up */
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Close button */
+.close-btn {
+  background-color: #8e70dc;
+  font-family: 'Chivo';
+  color: #fff;
+  border: none;
+  padding: 2px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  transform: rotate(1deg);
+  cursor: pointer;
+}
+
 .separator {
   height: 10px;
   display: inline-block;
@@ -340,6 +415,19 @@ a:hover {
   line-height: 1.2;
 }
 
+.skill-item p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .skills-item .right input {
   display: none;
 }
@@ -542,7 +630,4 @@ button[type="submit"]:hover {
   
 }
 
-
-
-style ONLY ul inside of a p element
 

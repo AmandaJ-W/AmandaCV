@@ -21,6 +21,28 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   
+  const storyBtn = document.getElementById('storyBtn');
+const popup = document.getElementById('popup');
+const closePopup = document.getElementById('closePopup');
+
+
+storyBtn.onclick = () => {
+  popup.style.display = 'flex';
+};
+
+
+closePopup.onclick = () => {
+  popup.style.display = 'none';
+};
+
+
+window.onclick = (event) => {
+  if (event.target === popup) {
+    popup.style.display = 'none';
+  }
+};
+
+  
   const languageSelector = document.getElementById("language-select");
   languageSelector.addEventListener("change", handleLanguageSelection);
 
@@ -81,6 +103,8 @@ let educationalSkills = [
   "CLIL", "Project-based Learning"
 ]
 
+
+
   // Display technical skills: 
 
   function displaySkills(skills, educationalSkills) {
@@ -107,6 +131,7 @@ let educationalSkills = [
 
 
   
+  
   // See more buttons in experience: 
 
   const seeMoreButtons = document.querySelectorAll(".see-more");
@@ -130,7 +155,8 @@ let educationalSkills = [
   });
 
   // Translation work (not currently functional):
-  const translations = {
+  
+  /* const translations = {
     'Junior Software Developer': 'Desarrolladora de Software Junior',
     'Skills': 'Habilidades',
     'Experience': 'Experiencia',
@@ -222,7 +248,7 @@ let educationalSkills = [
     'JavaScript': 'JavaScript',
     'SQL': 'SQL',
   };
-
+*/
   
 });
 
