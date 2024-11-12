@@ -581,11 +581,8 @@ button[type="submit"]:hover {
   }
   .popup-content {
     width: 90%;
-    max-width: 350px;
-    max-height: 250px; 
-    padding: 15px;
+    max-height: 90%; 
   }
-
 } 
 
 /* iPhone 13 */
