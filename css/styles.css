@@ -190,6 +190,7 @@ transition: all 0.3s ease;
   text-align: center;
   word-wrap: break-word; 
   overflow-wrap: break-word; 
+  white-space: normal;
 }
 
 /* Close button */
@@ -582,6 +583,7 @@ button[type="submit"]:hover {
     width: 90%;
     max-width: 350px;
     max-height: 250px; 
+    padding: 15px;
   }
 
 } 
