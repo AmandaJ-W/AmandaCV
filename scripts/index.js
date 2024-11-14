@@ -21,7 +21,19 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   
-  const storyBtn = document.getElementById('storyBtn');
+  const languageSelector = document.getElementById("language-select");
+  languageSelector.addEventListener("change", handleLanguageSelection);
+
+  const downloadButton = document.getElementById("download");
+  downloadButton.addEventListener("click", function () {
+    const dropdown = document.getElementById("language-dropdown");
+    dropdown.style.display = "block";
+  });
+
+
+    /* Pop up window */
+
+/* const storyBtn = document.getElementById('storyBtn');
 const popup = document.getElementById('popup');
 const closePopup = document.getElementById('closePopup');
 
@@ -41,32 +53,29 @@ window.onclick = (event) => {
     popup.style.display = 'none';
   }
 };
+*/
+
+// Pop up window
+const storyBtn = document.getElementById('storyBtn');
+const popup = document.getElementById('popup');
+const closePopup = document.getElementById('closePopup');
+
+storyBtn.onclick = () => {
+  popup.style.display = 'flex';
+};
+
+closePopup.onclick = () => {
+  popup.style.display = 'none';
+};
+
+window.onclick = (event) => {
+  if (event.target === popup) {
+    popup.style.display = 'none';
+  }
+};
 
   
-  const languageSelector = document.getElementById("language-select");
-  languageSelector.addEventListener("change", handleLanguageSelection);
-
-  const downloadButton = document.getElementById("download");
-  downloadButton.addEventListener("click", function () {
-    const dropdown = document.getElementById("language-dropdown");
-    dropdown.style.display = "block";
-  });
-
-  /* Animation effect on job position */
-
-  // document.addEventListener('DOMContentLoaded', () => {
-  //   const positionElement = document.querySelector('.position');
-  
-  //   // Start typing animation by adding the 'typing' class
-  //   positionElement.classList.add('typing'); 
-  
-  //   // Set a timeout to remove the cursor after typing effect is done
-  //   setTimeout(() => {
-  //     positionElement.classList.add('complete'); // Add class to hide cursor
-  //   }, 4000); // Match this timeout to the duration of the typing effect
-  // });
-  
-  
+  // Skills section:
 
   let skills = [
     "Java",
@@ -105,7 +114,7 @@ let educationalSkills = [
 
 
 
-  // Display technical skills: 
+// Display technical skills: 
 
   function displaySkills(skills, educationalSkills) {
     const skillsContainer = document.querySelector(".skills-item");
@@ -130,9 +139,7 @@ let educationalSkills = [
   displaySkills(skills, educationalSkills);
 
 
-  
-  
-  // See more buttons in experience: 
+// See more buttons in experience: 
 
   const seeMoreButtons = document.querySelectorAll(".see-more");
 

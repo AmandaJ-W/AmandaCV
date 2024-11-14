@@ -147,15 +147,6 @@ body {
   align-items: center;
 }
 #storyBtn {
-  /*width: 100%;
-  background-color: #8e70dc;
-  color: #fff;
-  border: none;
-  padding: 4px 4px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-*/
 display: block;
 width: 100%;
 padding: 5px 0;
@@ -181,7 +172,7 @@ transition: all 0.3s ease;
 
 /* Pop up */
 .popup-content {
-  background: #fff;
+  /* background: #fff;
   padding: 20px;
   width: 80%;
   max-width: 400px;
@@ -190,15 +181,44 @@ transition: all 0.3s ease;
   text-align: center;
   word-wrap: break-word; 
   overflow-wrap: break-word; 
-  white-space: normal;
+  white-space: normal; */ 
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #8e70dc;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
 
 /* Close button */
 .close-btn {
-  background-color: #8e70dc;
+  background-color: white;
   font-family: 'Chivo';
-  color: #fff;
-  border: none;
+  color: black;
+  border: 1px solid black;
   padding: 2px 4px;
   border-radius: 5px;
   cursor: pointer;
@@ -210,6 +230,7 @@ transition: all 0.3s ease;
   transition: transform 0.3s ease;
   transform: rotate(1deg);
   cursor: pointer;
+  border-color: #8e70dc;
 }
 
 .separator {
@@ -302,6 +323,15 @@ p {
     filter: brightness(120%);
 }
 
+
+@keyframes wiggle {
+  0% { transform: rotate(-5deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
 /* Experience section  */
 .left,
 .right {
@@ -375,6 +405,7 @@ p {
   cursor: pointer;
   color: black;
 }
+
 .see-more {
   font-size: 15px;
   font-weight: bold;
@@ -385,6 +416,7 @@ p {
   cursor: pointer;
   color: black;
 }
+
 .see-description {
   display: none;
 }
@@ -393,8 +425,7 @@ p {
   display: block;
   background-color: #e3e3e3;
   color: rgb(0, 0, 0);
-  padding: 10px;
-  
+  padding: 15px;
   font-size: 11px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
