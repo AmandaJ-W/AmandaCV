@@ -101,15 +101,20 @@ window.onclick = (event) => {
 ];
 
 let educationalSkills = [
-  "Classroom Teaching (PreK-12)", 
+  "Classroom Teaching - PreK to Adults", 
   "Lesson Planning", 
-  "Curriculum Design", 
-  "Curriculum Innovation", 
+  "Curriculum Development", 
+  "Lesson Material Creation", 
+  "Basic Video Editing",
   "Bilingual Curricula", 
+  "CLIL",
   "Language Assessments", 
   "Microsoft Office Suite", 
-  "Articulate Storyline", 
-  "CLIL", "Project-based Learning"
+  "Storyline 360", 
+  "Rise 360", 
+  "Canva", 
+  "xAPI", 
+  "SCORM"
 ]
 
 
