@@ -112,6 +112,7 @@ let educationalSkills = [
   "Microsoft Office Suite", 
   "Storyline 360", 
   "Rise 360", 
+  "eLearning Authoring Tools",
   "Canva", 
   "xAPI", 
   "SCORM"
