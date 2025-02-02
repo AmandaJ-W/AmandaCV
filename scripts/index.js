@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const selectedLanguage = event.target.value;
     let fileUrl = "";
     if (selectedLanguage === "English") {
-      fileUrl = "./docs/Amanda Jean Walker - CV English.pdf";
+      fileUrl = "";
     
     } else if (selectedLanguage === "Spanish") {
       fileUrl = "./docs/Amanda Jean Walker - CV Spanish.pdf";
