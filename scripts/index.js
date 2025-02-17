@@ -122,7 +122,7 @@ let educationalSkills = [
 
 // Display technical skills: 
 
-  function displaySkills(skills, educationalSkills) {r
+  function displaySkills(skills, educationalSkills) {
     const skillsContainer = document.querySelector(".skills-item");
 
     // Create paragraph for technical skills
