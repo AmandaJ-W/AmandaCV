@@ -432,7 +432,7 @@ transition: all 0.3s ease;
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #4a22db;
   font-style: italic;
 }
 
@@ -480,6 +480,13 @@ a:hover {
 
 .gif-preview {
   width: 200px; 
+  height: auto; 
+  border: 2px solid #ccc; 
+  border-radius: 8px; 
+}
+
+.video-controls {
+  width: 400px; 
   height: auto; 
   border: 2px solid #ccc; 
   border-radius: 8px; 
