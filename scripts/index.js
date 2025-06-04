@@ -136,7 +136,7 @@ let educationalSkills = [
     // Create paragraph for educational skills
     const eduSkillsParagraph = document.createElement("p");
     // eduSkillsParagraph.textContent = "Educational skills: " + educationalSkills.join(", ");
-    eduSkillsParagraph.innerHTML = "<strong>Educational skills:</strong> " + educationalSkills.join(", ");
+    eduSkillsParagraph.innerHTML = "<strong>Educational/ID skills:</strong> " + educationalSkills.join(", ");
     skillsContainer.appendChild(eduSkillsParagraph);
 
     eduSkillsParagraph.style.marginTop = "10px";

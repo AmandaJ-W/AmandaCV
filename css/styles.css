@@ -130,7 +130,6 @@ body {
 #download:hover {
   box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
-  transform: rotate(1deg);
   cursor: pointer;
 }
 
@@ -165,7 +164,7 @@ transition: all 0.3s ease;
 #storyBtn:hover {
   box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
-  transform: rotate(1deg);
+
   cursor: pointer;
   border-color: #8e70dc;
 }
@@ -228,7 +227,7 @@ transition: all 0.3s ease;
 .close-btn:hover {
   box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
-  transform: rotate(1deg);
+
   cursor: pointer;
   border-color: #8e70dc;
 }
@@ -558,7 +557,6 @@ button[type="submit"] {
 button[type="submit"]:hover {
   box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
-  transform: rotate(1deg);
   cursor: pointer;
 }
 
