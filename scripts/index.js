@@ -96,7 +96,8 @@ window.onclick = (event) => {
     "Integration Testing",
     "E/R Diagrams", 
     "Project Management", 
-    "Web Management"
+    "Web Management", 
+    "Basic video editing"
 ];
 
 let educationalSkills = [
