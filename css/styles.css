@@ -596,6 +596,13 @@ button[type="submit"]:hover {
     margin: 20px auto;
   }
 
+  .full-name {
+  text-align: center;
+  display: block; 
+  width: 100%; 
+  justify-content: center; 
+}
+
   .experience-item,
   .section-list-item {
     flex-direction: column;
