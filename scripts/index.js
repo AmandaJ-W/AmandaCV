@@ -56,7 +56,7 @@ window.onclick = (event) => {
 */
 
 // Pop up window
-const storyBtn = document.getElementById('storyBtn');
+/* const storyBtn = document.getElementById('storyBtn');
 const popup = document.getElementById('popup');
 const closePopup = document.getElementById('closePopup');
 
@@ -73,7 +73,7 @@ window.onclick = (event) => {
     popup.style.display = 'none';
   }
 };
-
+*/
   
   // Skills section:
 
@@ -86,8 +86,7 @@ window.onclick = (event) => {
     "WordPress",
     "Responsive Design",
     "Spring Boot",
-    "SQL",
-    "PostgreSQL",
+    "SQL (PostgreSQL)",
     "IntelliJ",
     "VS Code",
     "Git",
@@ -97,7 +96,7 @@ window.onclick = (event) => {
     "Integration Testing",
     "E/R Diagrams", 
     "Project Management", 
-    "Website Management"
+    "Web Management"
 ];
 
 let educationalSkills = [
@@ -114,6 +113,7 @@ let educationalSkills = [
   "Rise 360", 
   "eLearning Authoring Tools",
   "Canva", 
+  "Figma", 
   "xAPI", 
   "SCORM"
 ]
