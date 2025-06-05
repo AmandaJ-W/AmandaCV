@@ -91,13 +91,14 @@ window.onclick = (event) => {
     "VS Code",
     "Git",
     "RESTful APIs",
-    "Agile Methodologies",
+    "Agile Methodology",
     "Unit Testing (JUnit)",
     "Integration Testing",
     "E/R Diagrams", 
     "Project Management", 
     "Web Management", 
-    "Basic video editing"
+    "Basic Video Editing",
+    "Excel"
 ];
 
 let educationalSkills = [
@@ -105,16 +106,16 @@ let educationalSkills = [
   "Lesson Planning", 
   "Curriculum Development", 
   "Lesson Material Creation", 
-  "Basic Video Editing",
   "Bilingual Curricula", 
   "CLIL",
-  "Language Assessments", 
+  "Language Assessment", 
   "Microsoft Office Suite", 
   "Storyline 360", 
   "Rise 360", 
   "eLearning Authoring Tools",
   "Canva", 
   "Figma", 
+  "PowerPoint",
   "xAPI", 
   "SCORM"
 ]
