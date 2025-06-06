@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
       fileUrl = "";
     
     } else if (selectedLanguage === "Spanish") {
-      fileUrl = "./docs/Amanda Jean Walker - CV Spanish.pdf";
+      fileUrl = "";
   
     }
     if (fileUrl) {
