@@ -6,13 +6,14 @@
 
 html {
   height: 100%;
+  
 }
 
 body {
   min-height: 100%;
   background: radial-gradient(circle, #ffd8f8, #8e70dc);
   background-attachment: fixed;
-  font-size: 17px;
+  font-size: 18px;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   color: #222;
@@ -32,7 +33,7 @@ textarea {
 
 /* Rest of page */
 .container {
-  max-width: 700px;
+  max-width: 900px;
   background: #fff;
   margin: 0px auto 0px;
   box-shadow: 1px 1px 2px #dad7d7;
@@ -54,9 +55,9 @@ textarea {
 
 .profile-pic {
   position: absolute;
-  top: -25px;
+  top: -40px;
   right: 10px;
-  width: 80px;
+  width: 100px;
   height: auto;
   border-radius: 50%;
   border: 2px solid #fff;
@@ -481,19 +482,31 @@ a:hover {
   line-height: 1.2;
 }
 
-.skill-item p {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease-out forwards;
+
+.skills-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-@keyframes fadeInUp {
+.skills-item span {
+  background-color: #a36cf2; /* A nice purple */
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+
+/* @keyframes fadeInUp {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
 .skills-item .right input {
   display: none;
 }
@@ -506,17 +519,42 @@ a:hover {
   border-radius: 20px;
   margin-right: 3px;
 }
+*/
 
+.project-card {
+  padding: 5px;
+  margin: 5px;
+}
 .project-name {
   font-weight: bold;
   margin-top: 15px;
 }
 
+.project-card .project-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.text {
+  margin-top: 10px;
+  
+}
 .gif-preview {
+  width: 400px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.nugget {
   width: 200px;
   height: auto;
   border: 2px solid #ccc;
   border-radius: 8px;
+  margin-top: 10px;
 }
 
 .video-controls {
@@ -524,6 +562,7 @@ a:hover {
   height: auto;
   border: 2px solid #ccc;
   border-radius: 8px;
+  margin-top: 10px;
 }
 
 figcaption {
@@ -555,13 +594,17 @@ figcaption {
 #coding-lang {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: italic;
-  text-transform: capitalize;
+  margin-bottom: 10px;
 }
 
 .link-item i {
   text-align: center;
   flex: 0 0 auto;
   font-size: 2.5rem;
+}
+
+.language-card {
+  margin-left: 10px;
 }
 
 form {
@@ -659,7 +702,6 @@ button[type="submit"]:hover {
 
   .skills-item {
     text-align: left;
-    font-size: 0.99rem;
     padding: 0;
   }
 
@@ -676,14 +718,11 @@ button[type="submit"]:hover {
     margin: 0.625rem 0;
   }
 
-  .project-name {
-    font-size: 1rem;
-  }
 
   .section-title,
   .language,
   .level {
-    font-size: 0.875rem;
+    font-size: 1.25rem;
   }
 
   #contact-items {
